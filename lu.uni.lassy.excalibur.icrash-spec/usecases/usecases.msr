@@ -167,9 +167,34 @@ import lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes
 //----------------------------------------------------
 //----------------------------------------------------
 
+//----------------------------------------------------
+		 use case system subfunction oeGetAlertsSet(AetAlertStatus:etAlertStatus) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieSendAnAlert(ActAlert) returned to actCoordinator
+		    }
+		 }
+//----------------------------------------------------
+	  	use case system subfunction oeGetCrisisSet(AetCrisisStatus:etCrisisStatus){
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieSendACrisis(ActCrisis) returned to actCoordinator
+	    	}
+	  	}
+		
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+
 		use case system usergoal ugMonitor() {
       		actor actCoordinator[primary,active]
-      		// TODO
+      
+		    reuse oeGetCrisisSet[0..*]
+		    reuse oeGetAlertsSet[0..*]
+		      
+		    step a: actCoordinator executes oeGetAlertsSet
+		    step b: actCoordinator executes oeGetCrisisSet
     	}
     
 //----------------------------------------------------

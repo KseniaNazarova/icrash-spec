@@ -1,0 +1,22 @@
+package usecases.uciugManageSharing {
+	import lu.uni.lassy.excalibur.icrash.spec.usecases
+	import lu.uni.lassy.excalibur.icrash.spec.environment
+	
+
+	Use Case Model {
+
+		use case instance uciManageSharing : ugManageSharing {
+			actors {
+				Steve : actCoordinator
+			}
+			use case steps {
+				Steve executed instanceof subfunction oeAddMedia("{ID=1, name='News', category=CAR_CLASH, email='accident@news.com'}") {
+					ieMessage("Media News added!") returned to Steve
+				}
+				Steve executed instanceof subfunction oeRemoveMedia("1") {
+					ieMessage("Media News removed!") returned to Steve
+				}
+			}	
+		}
+	}
+}

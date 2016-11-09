@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:04:57 MSK 2016
+*/
+
+
+@@view uci-uciugManageCrisis
+@instance Use-Case usecases.uciugManageCrisis.uciugManageCrisis 
+@description ""
+@caption ""
