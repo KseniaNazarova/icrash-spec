@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 17:56:32 MSK 2016
+*/
+
+
+@@view uc-ugManageCrisis
+@model Use-Case lu.uni.lassy.excalibur.icrash.spec.usecases.ugManageCrisis 
+@description ""
+@caption ""

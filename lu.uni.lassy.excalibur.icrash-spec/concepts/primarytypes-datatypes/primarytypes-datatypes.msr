@@ -1,0 +1,84 @@
+/*
+* @author Kseniya
+* @date Wed Nov 09 14:31:38 MSK 2016
+*/
+
+package lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+	Concept Model {
+		
+		Primary Types {
+   
+			datatype dtAlertID extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtCrisisID extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtLogin extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtPassword extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtCoordinatorID extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtPhoneNumber extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtComment extends dtString {
+				operation is():ptBoolean			
+			}
+			datatype dtLatitude extends dtReal {
+				operation is():ptBoolean			
+			}
+			datatype dtLongitude extends dtReal {
+				operation is():ptBoolean			
+			}
+			datatype dtGPSLocation {
+				attribute latitude: dtLatitude 
+				attribute longitude: dtLongitude
+				operation is():ptBoolean			
+				operation isNearTo(AGPSLocation:dtGPSLocation ):ptBoolean
+			}
+			
+			datatype dtMediaID extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtMediaName extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtEmail extends dtString {
+				operation is():ptBoolean
+			}
+			
+			
+			enum etCrisisStatus {
+				constants["pending", "handled", "solved","closed"]
+				operation is():ptBoolean
+			}
+			enum etAlertStatus {
+				constants["pending", "valid", "invalid"]
+				operation is():ptBoolean
+			}
+			enum etCrisisType {
+				constants["small", "medium", "huge"]
+				operation is():ptBoolean
+			}
+			enum etHumanKind {
+				constants["witness", "victim", "anonymous"]
+				operation is():ptBoolean
+			}
+			enum etMediaCategory{
+				constants["car_clash", "public_transport_clash", "pedestrian"]
+				operation is():ptBoolean
+			}
+		}
+	}
+}

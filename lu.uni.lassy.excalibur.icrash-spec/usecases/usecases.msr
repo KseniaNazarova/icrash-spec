@@ -1,0 +1,208 @@
+/*
+* @author Kseniya
+* @date Wed Nov 09 14:31:38 MSK 2016
+*/
+
+package lu.uni.lassy.excalibur.icrash.spec.usecases {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.excalibur.icrash.spec.environment
+import lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes
+
+
+	Use Case Model {
+
+//----------------------------------------------------
+	  	use case system subfunction oeAddMedia(ActMedia:ctMedia) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+  		}
+  		
+//----------------------------------------------------
+	  	use case system subfunction oeRemoveMedia(AdtMediaID:dtMediaID) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+	  	}
+	  	
+//----------------------------------------------------
+	  	use case system subfunction oeShareByCrisis(AdtCrisisID:dtCrisisID) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+	  	}
+	  	     
+//----------------------------------------------------
+	  	use case system subfunction oeChooseMedia(AdtMediaID:dtMediaID) {
+	    	actor actCoordinator[primary,active]
+	    	returned messages {
+	    	  ieMessage(AMessage) returned to actCoordinator
+	    	}
+	  	} 
+	  	
+//----------------------------------------------------
+  		use case system subfunction oeSendToMedia() {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+  		}    
+  
+  
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+		use case system usergoal ugManageSharing() {
+			actor actCoordinator[primary,active]
+			
+			reuse oeAddMedia[0..*]
+			reuse oeRemoveMedia[0..*]
+			
+			step a: actCoordinator executes oeAddMedia
+			step b: actCoordinator executes oeRemoveMedia
+        	
+		}
+	  
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+
+	
+//----------------------------------------------------
+		use case system subfunction oeValidateAlert(AdtAlertID:dtAlertID) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+	  	}
+  
+//----------------------------------------------------
+	 	use case system subfunction oeSetCrisisStatus(AdtCrisisID:dtCrisisID ,AetCrisisStatus:etCrisisStatus) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+	  	}
+  
+//----------------------------------------------------
+	  	use case system subfunction oeSetCrisisHandler(AdtCrisisID:dtCrisisID) {
+		    actor actCoordinator[primary,active]
+		    actor actCoordinator[secondary,passive]
+		    actor actComCompany[secondary,passive,multiple]
+		    returned messages {
+		      ieMessage(AMessage) 
+		        returned to actCoordinator
+		      ieSendAnAlert(ActAlert)
+		        returned to actCoordinator
+		      ieSmsSend(AdtPhoneNumber,AdtSMS)
+		        returned to actComCompany
+		    }
+	  	}  
+  
+//----------------------------------------------------
+	  	use case system subfunction oeCloseCrisis(AdtCrisisID:dtCrisisID) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+		}
+    
+//----------------------------------------------------
+	    use case system subfunction oeReportOnCrisis(AdtCrisisID:dtCrisisID,AdtComment:dtComment) {
+		    actor actCoordinator[primary,active]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+		    }
+	  	}
+	  	
+//----------------------------------------------------
+	  	use case system subfunction oeInvalidateAlert(AdtAlertID:dtAlertID) {
+		    actor actCoordinator[primary,active]
+		    actor actComCompany[secondary,passive]
+		    returned messages {
+		      ieMessage(AMessage) returned to actCoordinator
+			}
+	  	}
+	
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+		use case system usergoal ugManageCrisis() {
+			actor actCoordinator[primary, active]
+
+			reuse oeValidateAlert[0..*]
+			reuse oeSetCrisisStatus[0..*]
+			reuse oeSetCrisisHandler[0..*]
+			reuse oeReportOnCrisis[0..*]
+			reuse oeCloseCrisis[0..*]
+			reuse oeInvalidateAlert[0..*]
+			reuse oeShareByCrisis[0..*]
+			reuse oeChooseMedia[0..*]
+			reuse oeSendToMedia[0..*]
+
+			step a: actCoordinator executes oeValidateAlert
+			step b: actCoordinator executes oeSetCrisisStatus
+			step c: actCoordinator executes oeSetCrisisHandler
+			step d: actCoordinator executes oeReportOnCrisis
+			step f: actCoordinator executes oeCloseCrisis
+			step g: actCoordinator executes oeInvalidateAlert
+			step h: actCoordinator executes oeShareByCrisis
+			step i: actCoordinator executes oeChooseMedia
+			step k: actCoordinator executes oeSendToMedia
+						
+			ordering constraint "managing a crisis is doing one of the indicated use cases."
+		}
+		
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+		use case system usergoal ugMonitor() {
+      		actor actCoordinator[primary,active]
+      		// TODO
+    	}
+    
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+    	use case system usergoal ugSecurelyUseSystem() {
+      		actor actCoordinator[primary,active]
+      		// TODO
+   		}
+		
+//----------------------------------------------------
+//----------------------------------------------------
+//----------------------------------------------------
+
+		use case system summary suGlobalCrisisHandling() {
+			actor actCoordinator[primary,active]
+			
+			reuse ugSecurelyUseSystem[1..*]
+			reuse ugMonitor[1..*] 
+			reuse ugManageCrisis[1..*]
+			reuse ugManageSharing[1..*]
+
+			step a: actCoordinator executes ugSecurelyUseSystem
+			step b: actCoordinator executes ugMonitor
+			step c: actCoordinator executes ugManageCrisis
+			step d: actCoordinator executes ugManageSharing
+
+      		ordering constraint "steps (a) (b) (c) and (d) executions are interleaved
+							 	(steps (b) (c) and (d) have their protocol constrained by steps of (a))."
+      		ordering constraint "steps (a) (b) (c) and (d) can be executed multiple times."
+		}
+	
+	}
+
+}
