@@ -1,0 +1,62 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:53 MSK 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator
+@description "represents actor responsible of handling one or several crisis for the \msricrash system."
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.inactCoordinator.ieSendAnAlert
+"allows for receiving a requested ctAlert instance."
+@inputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.inactCoordinator.ieSendACrisis
+"allows for receiving a requested ctCrisis instance."
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeInvalidateAlert
+"sent to indicate that an alert should be considered as closed."
+@outputEvent 
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeCloseCrisis
+"sent to indicate that a crisis should be considered as closed."
+@outputEvent 
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
+"sent to request all the ctAlert instances having a specific status."
+@outputEvent 
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeGetCrisisSet
+"sent to request all the ctCrisis instances having a specific status."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
+"sent to declare himself as been the handler of a crisis having the specified id."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeReportOnCrisis
+"sent to update the textual information available for a specific handled crisis."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeSetCrisisStatus
+"sent to define the handling status of a specific crisis."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeSetCrisisType
+"sent to define the gravity type of a specific crisis."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeValidateAlert
+"sent to indicate that a specific alert is not a fake."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeAddMedia
+"sent to indicate that a new media were added."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeRemoveMedia
+"sent to indicate that specific media were removed."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeShareByCrisis
+"sent to indicate that crises were chosen to share."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeChooseMedia
+"sent to indicate that specific media were chosen to share."
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeSendToMedia
+"sent to indicate that crises descriptions were sent to media."
+
+@endOutputEvents

@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeRemoveMedia}
+
+\label{OM-oeRemoveMedia}
+
+
+The \msrcode{oeRemoveMedia} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeRemoveMedia}{removing media from the common list}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtMediaID: dtMediaID}{remove the media from passed media id} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the system is started}
+	\addnumberedsinglerow{PreP}{the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that there exist at least one media in the list}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{actCoordinator is informed about the finished removing operation}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{none}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

@@ -1,0 +1,22 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:53:56 MSK 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAuthenticated
+@description ""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAuthenticated.login
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAuthenticated.pwd
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAuthenticated.vpIsLogged
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAuthenticated.init
+""
+@endOperations

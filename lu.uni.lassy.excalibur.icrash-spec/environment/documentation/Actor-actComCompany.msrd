@@ -1,0 +1,20 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:09 MSK 2016
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany
+@description ""
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.inactComCompany.ieSmsSend
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert
+""
+
+@endOutputEvents

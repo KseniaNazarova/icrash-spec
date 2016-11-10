@@ -1,0 +1,12 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:00 MSK 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAdministrator
+@description ""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAdministrator.init
+""
+@endOperations

@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:04:57 MSK 2016
+*/
+
+
+@@view uci-uciugManageCrisis
+@instance Use-Case usecases.uciugManageCrisis.uciugManageCrisis 
+@description "Simple use case instance for the user goal \msrcode{ugManageCrisis} illustrating a simple interaction scenario primarily handled by an coordinator in a concrete situation.Begins after the Coordinator got set of crises and when he sets crisis handler. he logs in the system until the full handling of all the existing crisis. After handling of crisis Coordinator determines a category of crisis and marks it for sharing with specific media"
+@caption ""

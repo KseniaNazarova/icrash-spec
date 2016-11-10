@@ -1,0 +1,37 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:07 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeChooseMedia
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeChooseMedia.AdtMediaID
+"chosen media id "
+@endParameters
+
+@description "selection of the specific media from the list to share with them"
+//preProtocol descriptions
+@preP
+"the system is started"
+@preP
+"the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)"
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that there exist at least one of the media with the appropriate category in the list"
+@preF
+"it assumes that you have selected the appropriate crisis"
+@endPreF
+//postFunctional descriptions
+@postF 
+"actCoordinator is informed about the choosing media "
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

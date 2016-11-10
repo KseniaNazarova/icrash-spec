@@ -1,0 +1,27 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:31 MSK 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.icrash.spec.usecases.oeSetCrisisStatus
+@description ""
+@parameter lu.uni.lassy.excalibur.icrash.spec.usecases.oeSetCrisisStatus.AdtCrisisID ""
+@parameter lu.uni.lassy.excalibur.icrash.spec.usecases.oeSetCrisisStatus.AetCrisisStatus ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

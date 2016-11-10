@@ -1,0 +1,12 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:20 MSK 2016
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtLatitude
+@description ""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtLatitude.is
+""
+@endOperations

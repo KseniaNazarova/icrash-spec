@@ -1,0 +1,24 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:41 MSK 2016
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.icrash.spec.usecases.suGlobalCrisisHandling
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,0 +1,28 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:53:59 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCoordinator.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCoordinator.init.Aid
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCoordinator.init.Alogin
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCoordinator.init.Apwd
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctCoordinator type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctCoordinator instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

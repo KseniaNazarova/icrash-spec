@@ -1,0 +1,13 @@
+/*
+@author Kseniya
+@date Thu Nov 10 02:41:16 MSK 2016
+*/
+
+
+@@view cm-pt-ct-lv-ctMedia
+@model Concept
+@level Local
+@sublevel Primary Class
+@number 4
+@description "shows the local view of the ctMedia primary class type."
+@caption "local view of the ctMedia primary class type"

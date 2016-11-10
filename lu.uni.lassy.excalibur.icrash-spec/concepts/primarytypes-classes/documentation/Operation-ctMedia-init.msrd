@@ -1,0 +1,31 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:03 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctMedia.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctMedia.init.Aid
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctMedia.init.Aname
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctMedia.init.Aemail
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctMedia.init.Acategory
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctMedia type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctMedia instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

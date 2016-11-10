@@ -1,0 +1,34 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:53:42 MSK 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState
+@description ""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.nextValueForAlertID
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.nextValueForCrisisID
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.clock
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.crisisReminderPeriod
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.maxCrisisReminderPeriod
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.vpLastReminder
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.vpStarted
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctState.init
+""
+@endOperations

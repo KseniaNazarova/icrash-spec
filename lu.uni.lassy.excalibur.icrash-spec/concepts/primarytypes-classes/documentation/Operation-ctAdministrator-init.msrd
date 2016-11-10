@@ -1,0 +1,25 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:01 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAdministrator.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAdministrator.init.Alogin
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctAdministrator.init.Apwd
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctAdministrator type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctAdministrator instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

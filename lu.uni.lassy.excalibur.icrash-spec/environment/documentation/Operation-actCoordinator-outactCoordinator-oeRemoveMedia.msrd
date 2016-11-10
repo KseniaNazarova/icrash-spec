@@ -1,0 +1,35 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:05 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeRemoveMedia
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeRemoveMedia.AdtMediaID
+"remove the media from passed media id"
+@endParameters
+
+@description "removing media from the common list"
+//preProtocol descriptions
+@preP
+"the system is started"
+@preP
+"the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)"
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that there exist at least one media in the list"
+@endPreF
+//postFunctional descriptions
+@postF 
+"actCoordinator is informed about the finished removing operation"
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

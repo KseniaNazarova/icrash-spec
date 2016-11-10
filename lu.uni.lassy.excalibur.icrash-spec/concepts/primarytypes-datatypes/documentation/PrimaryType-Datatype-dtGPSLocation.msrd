@@ -1,0 +1,22 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:24 MSK 2016
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation
+@description ""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.latitude
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.longitude
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.is
+""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
+""
+@endOperations

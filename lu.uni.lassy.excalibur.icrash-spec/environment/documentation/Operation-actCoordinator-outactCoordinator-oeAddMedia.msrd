@@ -1,0 +1,35 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:04 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeAddMedia
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeAddMedia.ActMedia
+"instance of media for adding to common list"
+@endParameters
+
+@description "adding to common list of media"
+//preProtocol descriptions
+@preP
+"the system is started"
+@preP
+"the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)"
+@endPreP
+//preFunctional descriptions
+@preF
+"none"
+@endPreF
+//postFunctional descriptions
+@postF 
+"actCoordinator is informed about the finished adding operation"
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

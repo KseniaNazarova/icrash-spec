@@ -1,0 +1,16 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:43 MSK 2016
+*/
+
+
+@@Secondary Type Datatype lu.uni.lassy.excalibur.icrash.spec.concepts.secondarytypes.datatypes.dtSMS
+@description ""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.secondarytypes.datatypes.dtSMS.value
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.secondarytypes.datatypes.dtSMS.is
+""
+@endOperations

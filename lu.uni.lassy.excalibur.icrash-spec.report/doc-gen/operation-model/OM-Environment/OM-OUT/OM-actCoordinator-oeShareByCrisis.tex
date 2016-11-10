@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeShareByCrisis}
+
+\label{OM-oeShareByCrisis}
+
+
+The \msrcode{oeShareByCrisis} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeShareByCrisis}{sent to indicate that crisis was chosen to share.}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtCrisisID: dtCrisisID}{marked crisis id (may list) } 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the system is started}
+	\addnumberedsinglerow{PreP}{the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that there exist at least one of the media with the appropriate category in the list}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{actCoordinator is informed about the chosen crises for sharing}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{none}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

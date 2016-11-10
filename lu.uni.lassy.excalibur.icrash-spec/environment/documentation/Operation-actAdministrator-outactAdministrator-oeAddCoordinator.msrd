@@ -1,0 +1,40 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:51 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actAdministrator.outactAdministrator.oeAddCoordinator
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actAdministrator.outactAdministrator.oeAddCoordinator.AdtCoordinatorID
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actAdministrator.outactAdministrator.oeAddCoordinator.AdtLogin
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actAdministrator.outactAdministrator.oeAddCoordinator.AdtPassword
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

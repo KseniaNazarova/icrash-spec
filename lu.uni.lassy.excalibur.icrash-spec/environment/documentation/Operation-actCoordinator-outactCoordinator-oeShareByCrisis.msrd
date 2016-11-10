@@ -1,0 +1,35 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:06 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeShareByCrisis
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeShareByCrisis.AdtCrisisID
+"marked crisis id (may list) "
+@endParameters
+
+@description "sent to indicate that crisis was chosen to share."
+//preProtocol descriptions
+@preP
+"the system is started"
+@preP
+"the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)"
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that there exist at least one of the media with the appropriate category in the list"
+@endPreF
+//postFunctional descriptions
+@postF 
+"actCoordinator is informed about the chosen crises for sharing"
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

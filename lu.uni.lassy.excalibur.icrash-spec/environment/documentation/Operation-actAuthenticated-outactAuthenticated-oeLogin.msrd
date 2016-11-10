@@ -1,0 +1,37 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:14 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actAuthenticated.outactAuthenticated.oeLogin
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actAuthenticated.outactAuthenticated.oeLogin.AdtLogin
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actAuthenticated.outactAuthenticated.oeLogin.AdtPassword
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

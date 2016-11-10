@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:19:45 MSK 2016
+*/
+
+
+@@view uci-uciugManageSharing
+@instance Use-Case usecases.uciugManageSharing.uciugManageSharing 
+@description "use case instance for the user goal \msrcode{ugManageSharing} illustrates a simple example of scenario handled by an coordinator for management of the list of media in a concrete situation."
+@caption ""

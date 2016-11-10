@@ -1,0 +1,49 @@
+package usecases.uciugManageCrisis {
+	import lu.uni.lassy.excalibur.icrash.spec.usecases
+	import lu.uni.lassy.excalibur.icrash.spec.environment
+	import lu.uni.lassy.excalibur.icrash.spec.usecases
+
+	Use Case Model {
+
+		use case instance uciugManageCrisis : ugManageCrisis{
+			actors {
+				Steve:actCoordinator
+			}
+			use case steps {
+				Steve executed instanceof subfunction oeSetCrisisHandler("1"){
+					ieMessage("You're now consider as handling the crisis") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeValidateAlert("1"){
+					ieMessage("The Alert is now declared as valid!") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeSetCrisisStatus("1", "solved") {
+					ieMessage("The crisis status has been updated!") returned to Steve
+				}
+
+				Steve executed instanceof subfunction oeReportOnCrisis("1", "car clash, 2 victims sent to hospital...") {
+					ieMessage("The crisis comment has been updated!") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeShareByCrisis("1") {
+					ieMessage("The crisis with ID 1 is chosen for sharing") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeChooseMedia("3") {
+					ieMessage("The media with ID 3 is chosen") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeSendToMedia() {
+					ieMessage("The crisis 1 sent to media 3!") returned to Steve
+				}
+				
+				Steve executed instanceof subfunction oeCloseCrisis("1") {
+					ieMessage("The crisis is now closed!") returned to Steve
+				}
+
+				
+			}
+		}
+	}
+}

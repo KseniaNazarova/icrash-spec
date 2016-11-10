@@ -1,0 +1,12 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:16 MSK 2016
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtPhoneNumber
+@description ""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtPhoneNumber.is
+""
+@endOperations

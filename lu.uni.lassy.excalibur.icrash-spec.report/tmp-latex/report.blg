@@ -1,0 +1,9 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
+The style file: ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+Database file #1: ./../lu.uni.lassy.excalibur.standard.report.libraries/defs/references/messir.bib
+Database file #2: doc/bibliography/report.bib
+Repeated entry---line 1 of file doc/bibliography/report.bib
+ : @book{messirbook
+ :                 ,
+I'm skipping whatever remains of this entry
+(There was 1 error message)

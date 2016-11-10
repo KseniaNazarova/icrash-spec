@@ -1,0 +1,26 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:24 MSK 2016
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.icrash.spec.usecases.oeRemoveMedia
+@description ""
+@parameter lu.uni.lassy.excalibur.icrash.spec.usecases.oeRemoveMedia.AdtMediaID ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

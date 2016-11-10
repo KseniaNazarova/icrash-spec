@@ -1,0 +1,41 @@
+\subsection{Operation Model for oeSendToMedia}
+
+\label{OM-oeSendToMedia}
+
+
+The \msrcode{oeSendToMedia} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeSendToMedia}{sent information about chosen crises to selected media}
+
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the system is started}
+	\addnumberedsinglerow{PreP}{the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that there exist at least one of the media with the appropriate category in the list}
+	\addnumberedsinglerow{PreF}{it assumes that have already been selected crises and the corresponding media}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{actCoordinator is informed about the sending information about crises}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{none}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

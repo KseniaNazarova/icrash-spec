@@ -1,0 +1,43 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:53:47 MSK 2016
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis
+@description ""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.id
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.type
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.status
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.location
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.instant
+""
+@attribute
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.comment
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.init
+""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.handlingDelayPassed
+""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.maxHandlingDelayPassed
+""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.isSentToCoordinator
+""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes.ctCrisis.isAllocatedIfPossible
+""
+@endOperations

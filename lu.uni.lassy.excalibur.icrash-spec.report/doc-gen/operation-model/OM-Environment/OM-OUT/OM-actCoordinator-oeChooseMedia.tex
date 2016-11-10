@@ -1,0 +1,43 @@
+\subsection{Operation Model for oeChooseMedia}
+
+\label{OM-oeChooseMedia}
+
+
+The \msrcode{oeChooseMedia} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeChooseMedia}{selection of the specific media from the list to share with them}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtMediaID: dtMediaID}{chosen media id } 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the system is started}
+	\addnumberedsinglerow{PreP}{the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{it is supposed that there exist at least one of the media with the appropriate category in the list}
+	\addnumberedsinglerow{PreF}{it assumes that you have selected the appropriate crisis}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{actCoordinator is informed about the choosing media }
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{none}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

@@ -1,0 +1,34 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:58 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeGetCrisisSet
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeGetCrisisSet.AetCrisisStatus
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

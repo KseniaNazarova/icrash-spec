@@ -1,0 +1,22 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:26 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo.AGPSLocation
+""
+@endParameters
+
+@description "
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

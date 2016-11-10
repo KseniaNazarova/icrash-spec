@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 17:56:32 MSK 2016
+*/
+
+
+@@view uc-ugManageCrisis
+@model Use-Case lu.uni.lassy.excalibur.icrash.spec.usecases.ugManageCrisis 
+@description "The actCoordinator's goal is to get the detailed list of existing crisis or alerts to decide on next actions to undertake, for example to determine whether they are suitable to be sent to special media and send them."
+@caption ""

@@ -1,0 +1,11 @@
+/*
+@author Kseniya
+@date Wed Nov 09 18:33:33 MSK 2016
+*/
+
+
+@@view uc-suGlobalCrisisHandling
+@model Use-Case lu.uni.lassy.excalibur.icrash.spec.usecases.suGlobalCrisisHandling 
+@description 
+"the actCoordinator's goal is to monitor the alerts received and the corresponding crisis in order to act as necessary to handle the crisis. Also to manage a list of media."
+@caption ""

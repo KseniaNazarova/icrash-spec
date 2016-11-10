@@ -1,0 +1,42 @@
+\subsection{Operation Model for oeAddMedia}
+
+\label{OM-oeAddMedia}
+
+
+The \msrcode{oeAddMedia} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeAddMedia}{adding to common list of media}
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{ActMedia: ctMedia}{instance of media for adding to common list} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{the system is started}
+	\addnumberedsinglerow{PreP}{the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)}
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{none}
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{actCoordinator is informed about the finished adding operation}
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{none}
+	\end{operationmodel}
+
+
+
+	
+	
+	
+	
+
+
+
+
+

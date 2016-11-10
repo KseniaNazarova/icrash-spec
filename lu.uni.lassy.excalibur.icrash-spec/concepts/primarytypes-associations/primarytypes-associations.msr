@@ -1,0 +1,49 @@
+/*
+* @author Kseniya
+* @date Wed Nov 09 14:31:38 MSK 2016
+*/
+
+package lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.associations {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.icrash.spec.environment
+
+	Concept Model {
+		
+		Primary Types{
+
+// Internal
+
+association assctAlertctCrisis
+	ctAlert(rnAlerts)[1..*]
+	ctCrisis (rnTheCrisis)[1..1]
+
+association assctAlertctHuman
+	ctAlert(rnSignaled)[1..*]
+	ctHuman (rnSignaler)[1..1]
+
+association assctCrisisctCoordinator
+	ctCrisis(rnHandled)[0..*]
+	ctCoordinator(rnHandler)[0..1]
+	
+// With Actors
+
+ 		association assctHumanactComCompany 
+ 					ctHuman(rnctHuman)[0..*]
+ 					actComCompany(rnactComCompany)[1..1]
+ 					
+ 		association assctCoordinatoractCoordinator 
+ 					ctCoordinator(rnctCoordinator)[1..1]
+ 					actCoordinator(rnactCoordinator)[1..1]
+ 					
+ 		association assctAuthenticatedactAuthenticated 
+ 					ctAuthenticated(rnctAuthenticated)[1..1]
+ 					actAuthenticated(rnactAuthenticated)[1..1]
+			
+		}
+	}
+}

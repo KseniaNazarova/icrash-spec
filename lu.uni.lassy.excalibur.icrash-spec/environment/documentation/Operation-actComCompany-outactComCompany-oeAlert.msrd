@@ -1,0 +1,49 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:11 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert
+//parameters
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AetHumanKind
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AdtDate
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AdtTime
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AdtPhoneNumber
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AdtGPSLocation
+""
+@parameter
+lu.uni.lassy.excalibur.icrash.spec.environment.actComCompany.outactComCompany.oeAlert.AdtComment
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

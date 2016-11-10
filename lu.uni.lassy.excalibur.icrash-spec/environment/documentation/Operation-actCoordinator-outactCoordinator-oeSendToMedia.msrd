@@ -1,0 +1,31 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:55:08 MSK 2016
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.icrash.spec.environment.actCoordinator.outactCoordinator.oeSendToMedia
+@description "sent information about chosen crises to selected media"
+//preProtocol descriptions
+@preP
+"the system is started"
+@preP
+"the actor logged previously and did not log out ! (i.e. the associated ctCoordinator instance is considered logged)"
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that there exist at least one of the media with the appropriate category in the list"
+@preF
+"it assumes that have already been selected crises and the corresponding media"
+@endPreF
+//postFunctional descriptions
+@postF 
+"actCoordinator is informed about the sending information about crises"
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

@@ -1,0 +1,12 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:54:33 MSK 2016
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.etCrisisStatus
+@description ""
+@operation
+lu.uni.lassy.excalibur.icrash.spec.concepts.primarytypes.datatypes.etCrisisStatus.is
+""
+@endOperations

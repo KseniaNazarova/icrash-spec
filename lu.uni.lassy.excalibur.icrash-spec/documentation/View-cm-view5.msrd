@@ -1,0 +1,13 @@
+/*
+@author Kseniya
+@date Thu Nov 10 02:53:01 MSK 2016
+*/
+
+
+@@view cm-pt-et-lv-etCategory
+@model Concept
+@level Local
+@sublevel Primary Datatype
+@number 5
+@description "used to determine which category of media waits specific crisis description"
+@caption ""

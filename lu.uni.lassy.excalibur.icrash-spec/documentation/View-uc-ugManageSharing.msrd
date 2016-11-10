@@ -1,0 +1,10 @@
+/*
+@author Kseniya
+@date Wed Nov 09 20:53:32 MSK 2016
+*/
+
+
+@@view uc-ugManageSharing
+@model Use-Case lu.uni.lassy.excalibur.icrash.spec.usecases.ugManageSharing
+@description "actCoordinator's goal consists in management of the list of media, namely, addition and removal of specialized media in the table"
+@caption ""
